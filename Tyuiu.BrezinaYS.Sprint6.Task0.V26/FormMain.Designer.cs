@@ -40,6 +40,7 @@
             pictureBoxFormyl = new PictureBox();
             buttonDone = new Button();
             buttonHelp = new Button();
+            checkBox1 = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)pictureBoxFormyl).BeginInit();
             SuspendLayout();
             // 
@@ -49,11 +50,11 @@
             textBoxTask.BorderStyle = BorderStyle.None;
             textBoxTask.Cursor = Cursors.IBeam;
             textBoxTask.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxTask.Location = new Point(12, 32);
+            textBoxTask.Location = new Point(12, 36);
             textBoxTask.Multiline = true;
             textBoxTask.Name = "textBoxTask";
             textBoxTask.ReadOnly = true;
-            textBoxTask.Size = new Size(316, 115);
+            textBoxTask.Size = new Size(329, 111);
             textBoxTask.TabIndex = 0;
             textBoxTask.Text = "Вычислить выражение по формуле ";
             // 
@@ -101,6 +102,7 @@
             textBoxVarX.Name = "textBoxVarX";
             textBoxVarX.Size = new Size(125, 27);
             textBoxVarX.TabIndex = 4;
+            textBoxVarX.TextChanged += textBoxVarX_TextChanged;
             // 
             // textBox1
             // 
@@ -166,11 +168,22 @@
             buttonHelp.UseVisualStyleBackColor = true;
             buttonHelp.Click += buttonHelp_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(172, 93);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(101, 24);
+            checkBox1.TabIndex = 11;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(479, 316);
+            Controls.Add(checkBox1);
             Controls.Add(buttonHelp);
             Controls.Add(buttonDone);
             Controls.Add(pictureBoxFormyl);
@@ -206,5 +219,6 @@
         private PictureBox pictureBoxFormyl;
         private Button buttonDone;
         private Button buttonHelp;
+        private CheckBox checkBox1;
     }
 }

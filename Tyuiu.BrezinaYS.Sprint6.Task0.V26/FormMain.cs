@@ -49,5 +49,10 @@ namespace Tyuiu.BrezinaYS.Sprint6.Task0.V26
         {
 
         }
+
+        private void textBoxVarX_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
